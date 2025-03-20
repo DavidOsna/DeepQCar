@@ -61,8 +61,8 @@ class RacingEnv:
     def __init__(self, size):
         pygame.init()
         self.screen = pygame.display.set_mode(size)
-        self.walls = load_positions("DeepQCar/real_walls")
-        self.goals = load_positions("DeepQCar/real_goals")
+        self.walls = load_positions("real_walls")
+        self.goals = load_positions("real_goals")
         self.goal_counter = 0
         self.fps = 60
         self.clock = pygame.time.Clock()
